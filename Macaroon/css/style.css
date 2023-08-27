@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Gilory, sans-serif;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: GiloryMedium, sans-serif;
+    src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+    font-family: GiloryBold, sans-serif;
+    src: url("../fonts/Gilroy-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: GiloryExtrabold, sans-serif;
+    src: url("../fonts/Gilroy-Extrabold.ttf");
+}
+
+@font-face {
+    font-family: Tavolga;
+    src: url("../fonts/Tavolga-Free.ttf");
+}
+
+/*________Header_________________________________________*/
+
+
+.header {
+    background-color: #eba8b1;
+    padding: 32px 0 32px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: GiloryMedium, sans-serif;
+    border-bottom: 2px solid transparent;
+    color: rgb(119, 11, 29);
+    margin-right: 39px;
+    transition-property: border;
+    transition-duration: 1s;
+    padding-bottom: 3px;
+}
+
+
+.menu-link:hover {
+    border-bottom: 2px solid rgb(119, 11, 29);
+}
+
+.phone-number {
+    font-size: 16px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*_________MAIN__________________________________________________*/
+
+
+.main {
+    background-color: #eba8b1;
+    padding: 126px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    z-index: 1;
+    position: relative;
+}
+
+.main-orbit {
+    position: relative;
+    top: -304px;
+    right: 150px;
+}
+
+.main-orbit-1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 50%;
+    border: 1px solid rgb(130, 19, 40);
+    animation: macaroons-orbit-1 4s 0.5s linear infinite;
+}
+
+
+.main-orbit-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 50%;
+    border: 1px solid rgb(130, 19, 40);
+    animation: macaroons-orbit-2 4s 0.9s linear infinite;
+}
+
+.main-info {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    max-width: 585px;
+    margin-right: 12px;
+}
+
+.main-title h1 {
+    font-size: 53px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.091;
+    margin-bottom: 59px;
+}
+
+.main-text {
+    font-size: 18px;
+    font-family: "Tavolga", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    max-width: 360px;
+    margin-bottom: 80px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    border:none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "GiloryBold", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 240px;
+    height: 60px;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+.button:hover {
+    box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+}
+
+/*_______ADVANTAGES________________________________________________*/
+
+
+.advantages {
+    position: relative;
+    z-index: 2;
+    background-color: #ffefef;
+    padding-top: 119px;
+    padding-bottom: 126px;
+}
+
+.advantages__container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.advantages-image {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-info {
+    display: grid;
+    margin-bottom: 88px;
+}
+
+.advantages-tittle {
+    font-size: 28px;
+    font-family: "Tavolga", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.222;
+    margin-bottom: 60px;
+}
+
+.advantages-info-text {
+    max-width: 402px;
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    text-align: left;
+}
+
+.advantages-items {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: 230px;
+    grid-column-gap: 85px;
+}
+
+.advantages-item {
+    width: 220px;
+    cursor: pointer;
+
+}
+
+.advantages-number {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(130, 19, 40);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 13px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+
+.number {
+    position: absolute;
+    bottom: -14px;
+    font-size: 60px;
+    font-family: "GiloryExtrabold", sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.advantages-item:hover .advantages-number {
+    background-color: #eba8b1;
+}
+
+.advantages-item:hover .number {
+    color: rgb(130, 19, 40);
+}
+
+.advantages-item-title {
+    font-size: 20px;
+    font-family: GiloryExtrabold, sans-serif;
+    font-weight: bolder;
+    color: rgb(51, 25, 7);
+    margin-bottom: 20px;
+}
+
+.advantages-item-text {
+    font-size: 15px;
+    height: 96px;
+    font-family: GiloryMedium, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.333;
+    text-align: left;
+}
+
+/*________PRODUCTS______________________________________*/
+
+.products {
+    background-color: #eba8b1;
+    padding: 120px 0 120px 0;
+}
+
+.products-items {
+    display: grid;
+    grid-template-rows:max-content;
+    grid-template-columns: repeat(4, 263px);
+    grid-column-gap: 29px;
+    align-items: center;
+}
+
+.products-title {
+    font-size: 45px;
+    font-family: "Tavolga", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.222;
+    text-align: center;
+}
+
+.products-item {
+    position: relative;
+}
+
+.products-item:hover .product-image {
+    transform: scale(1.1);
+}
+
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 61px;
+    height: 118px;
+    transition: all 1s ease;
+}
+
+.white-border {
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 20px;
+    padding: 100px 20px 27px 20px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-family: "Tavolga", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.make-order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-prise-info {
+    font-size: 15px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.button.button-order {
+    width: 130px;
+}
+
+/*_______MAKE ORDER____________________________________________*/
+
+
+.order {
+    background-color: #ffefef;
+    padding: 97px 0 120px 0;
+}
+
+.order__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.order-image {
+    display: flex;
+    align-self: end;
+}
+
+.order-strawberry-1 {
+    position: absolute;
+    z-index: 3;
+    top: 41px;
+    left: 0;
+    animation: strawberry 1.5s linear infinite;
+    animation-direction: alternate;
+}
+
+.order-strawberry-2 {
+    position: absolute;
+    z-index: 3;
+    bottom: 69px;
+    right: 0;
+    animation: strawberry 1.5s linear infinite;
+    animation-direction: alternate;
+}
+
+
+.order-form {
+    max-width: 401px;
+}
+
+
+.order-title {
+    font-size: 28px;
+    font-family: "Tavolga", sans-serif;
+    color: rgb(51, 25, 7);
+    margin-bottom: 40px;
+}
+
+.order-info {
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    margin-bottom: 48px;
+}
+
+.your-choose-title {
+    font-size: 18px;
+    font-family: GiloryBold, sans-serif;
+    color: rgb(18, 10, 6);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contacts-title {
+    font-size: 18px;
+    font-family: GiloryBold, sans-serif;
+    color: rgb(18, 10, 6);
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 22px;
+}
+
+.input {
+    background-color: #ffefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "GiloryBold", sans-serif;
+    color: rgb(118, 12, 34);
+    font-weight: bold;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 294px;
+    height: 60px;
+    border-width: 1px;
+    border-color: rgb(130, 19, 40);
+    border-style: solid;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.input::placeholder {
+    font-size: 15px;
+    font-family: GiloryBold, sans-serif;
+    color: rgb(118, 12, 34);
+    font-weight: bold;
+    line-height: 5.333;
+    text-align: left;
+}
+
+.button.submit {
+    width: 294px;
+    height: 60px;
+}
+
+/*____________FOOTER___________________________________________________*/
+
+.footer {
+    background-color: #c0707c;
+    padding: 80px 0 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rights {
+    font-size: 12px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(227, 172, 180);
+    text-align: left;
+    margin-top: 19px;
+}
+
+.footer-instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inst-image {
+    margin-bottom: 9px;
+}
+
+.inst-text {
+    font-size: 16px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.surprise {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.surprise-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    transition: all 0.5s linear;
+}
+
+.surprise-image:hover {
+    box-shadow: 0 0 12.6px 2.4px rgba(130, 19, 40, 0.5);
+}
+
+.surprise:hover .surprise-text {
+    bottom: 14px;
+}
+
+.surprise-text {
+    border-width: 2px;
+    border-color: rgb(119, 10, 29);
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(254, 239, 238);
+    position: absolute;
+    bottom: -100px;
+    right: 91px;
+    z-index: 3;
+    font-size: 15px;
+    font-family: "Gilroy",sans-serif;
+    color: rgb(119, 10, 29);
+    line-height: 1.333;
+    text-align: left;
+    width: 172px;
+    height: 64px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    transition: all 1s ease;
+}
+
+.surprise-text::after {
+    content: '';
+    width: 11px;
+    height: 12px;
+    border-width: 2px;
+    border-color: rgb(119, 10, 29);
+    border-style: solid;
+    background-color: rgb(254, 239, 238);
+    position: absolute;
+    bottom: 22px;
+    right: -8px;
+    z-index: 0;
+    transform: rotate(45deg);
+    border-left: none;
+    border-bottom: none;
+}
+
+
+
+.navMenu {
+    display: none;
+}
+
+.navMenu > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: #821328;
+}
+
+.navMenu > span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.navMenu, .navMenu > span {
+    transition: all .4s ease-in-out;
+}
+
+.navMenu.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+
+.navMenu.active > span:nth-child(2) {
+    width: 0;
+}
+
+.navMenu.active > span:nth-child(1),
+.navMenu.active > span:nth-child(3) {
+    transition-delay: .4s;
+}
+
+.navMenu.active > span:nth-child(1) {
+    transform: translateY(9px);
+}
+
+.navMenu.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+}
+
+
+/*-----------ANIMATION------------------------------*/
+
+
+@keyframes strawberry {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(-20px)
+    }
+
+}
+
+@keyframes macaroons-orbit-1 {
+    from {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    75% {
+        opacity: 0;
+        transform: scale(3)
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+@keyframes macaroons-orbit-2 {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75% {
+        opacity: 0;
+        transform: scale(3)
+    }
+
+    to {
+        opacity: 0;
+    }
+}
